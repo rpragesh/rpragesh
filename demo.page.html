@@ -1,0 +1,6 @@
+<ion-content>
+  <ion-label class='textBold padding15 displayBlock'>{{'DESCRIPTION_PAGE_HEADING' | translate }}</ion-label>
+  <ion-textarea class='paddingLeftRight15' autocapitalize='sentences' placeholder="{{'DESCRIPTION_OF_ISSUE' | translate }}" type='text'
+    [(ngModel)]='description' (ionChange)='validateLength($event)' #focusInput>
+  </ion-textarea>
+</ion-content>
